@@ -9,7 +9,8 @@ namespace GroupProject.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "GroupProject.Models.ApplicationDbContext";
         }
 
