@@ -16,6 +16,7 @@ namespace GroupProject.Models
         [Required(ErrorMessage ="Please leave your comment or question")]
         [MaxLength(5000)]
         [Display(Name ="Comment or question")]
+        
         public string Note { get; set; }
 
         [Display(Name ="Email address")]
