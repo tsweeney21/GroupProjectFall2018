@@ -7,6 +7,9 @@ namespace GroupProject.Models
 {
     public class Product
     {
+
+        //test rollback
+
         public int prodID { get; set; }
         public string prodName { get; set; }
         public string prodDescription { get; set; }
