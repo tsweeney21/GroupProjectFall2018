@@ -198,12 +198,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201811272008378_InitialCreate.cs" />
     <Compile Include="Migrations\201811272008378_InitialCreate.Designer.cs">
       <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811292004455_update-database.cs" />
+    <Compile Include="Migrations\201811292004455_update-database.Designer.cs">
+      <DependentUpon>201811292004455_update-database.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -271,6 +276,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Store\Create.cshtml" />
+    <Content Include="Views\Store\Delete.cshtml" />
+    <Content Include="Views\Store\Details.cshtml" />
+    <Content Include="Views\Store\Edit.cshtml" />
+    <Content Include="Views\Store\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -291,6 +301,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811272008378_InitialCreate.resx">
       <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811292004455_update-database.resx">
+      <DependentUpon>201811292004455_update-database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
