@@ -32,6 +32,6 @@ namespace GroupProject.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<GroupProject.Models.ApplicationUser> ApplicationUsers { get; set; }
+        
     }
 }
