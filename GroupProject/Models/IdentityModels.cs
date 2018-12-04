@@ -17,7 +17,7 @@ namespace GroupProject.Models
             return userIdentity;
         }
     }
-
+    //test
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Comment> comments { get; set; }
