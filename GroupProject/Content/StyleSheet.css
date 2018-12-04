@@ -8193,4 +8193,12 @@ button.close {
         display: none !important;
     }
 }
+
+.mainImage {
+    max-width: 100%
+}
+
+#mainImage {
+    max-width: 100%
+}
 /*# sourceMappingURL=bootstrap.css.map */
