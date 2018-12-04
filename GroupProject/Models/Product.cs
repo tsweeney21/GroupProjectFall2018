@@ -14,22 +14,22 @@ namespace GroupProject.Models
         
 
         [Key]
-        public int prodID { get; set; }
+        public int ProdID { get; set; }
         [Required]
         [MaxLength(255)]
         [Display(Name = "Product Name")]
-        public string prodName { get; set; }
+        public string ProdName { get; set; }
         [Required]
         [MaxLength(255)]
         [Display(Name = "Product Description")]
-        public string prodDescription { get; set; }
+        public string ProdDescription { get; set; }
         [Required]
         [Range(0, 99.99)]
         [Display(Name = "Product Price")]
-        public decimal prodPrice { get; set; }
+        public decimal ProdPrice { get; set; }
         [Required]
         [MaxLength(255)]
-        public string prodPicture { get; set; }
+        public string ProdPicture { get; set; }
 
     }
 }
