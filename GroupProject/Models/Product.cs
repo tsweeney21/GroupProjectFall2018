@@ -1,34 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace GroupProject.Models
 {
+    [Table("Products")]
     public class Product
     {
 
-        //test rollback
+        
 
-        public int prodID { get; set; }
-        public string prodName { get; set; }
-        public string prodDescription { get; set; }
-        public decimal prodPrice { get; set; }
-        public string prodPicture { get; set; }
+        [Key]
+        public int ProdID { get; set; }
+        [Required]
+        [MaxLength(255)]
+        [Display(Name = "Product Name")]
+        public string ProdName { get; set; }
+        [Required]
+        [MaxLength(255)]
+        [Display(Name = "Product Description")]
+        public string ProdDescription { get; set; }
+        [Required]
+        [Range(0, 99.99)]
+        [Display(Name = "Product Price")]
+        public decimal ProdPrice { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string ProdPicture { get; set; }
 
-        public Product()
-        {
-
-        }
-
-        public Product(int prodID, string prodName, string prodDescription, decimal prodPrice, string prodPicture)
-        {
-            this.prodID = prodID;
-            this.prodName = prodName;
-            this.prodDescription = prodDescription;
-            this.prodPrice = prodPrice;
-            this.prodPicture = prodPicture;
-                
-        }
     }
 }

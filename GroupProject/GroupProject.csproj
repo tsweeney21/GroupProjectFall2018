@@ -215,6 +215,26 @@
     <Compile Include="Migrations\201811292019234_AddedCommentClass.Designer.cs">
       <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812041943219_AddProductsTable.cs" />
+    <Compile Include="Migrations\201812041943219_AddProductsTable.Designer.cs">
+      <DependentUpon>201812041943219_AddProductsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812041949157_UpdateTable.cs" />
+    <Compile Include="Migrations\201812041949157_UpdateTable.Designer.cs">
+      <DependentUpon>201812041949157_UpdateTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812042002549_AddProduct.cs" />
+    <Compile Include="Migrations\201812042002549_AddProduct.Designer.cs">
+      <DependentUpon>201812042002549_AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812042006163_AddProduct1.cs" />
+    <Compile Include="Migrations\201812042006163_AddProduct1.Designer.cs">
+      <DependentUpon>201812042006163_AddProduct1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812042012322_product.cs" />
+    <Compile Include="Migrations\201812042012322_product.Designer.cs">
+      <DependentUpon>201812042012322_product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -294,11 +314,10 @@
     <Content Include="Views\Comments\Edit.cshtml" />
     <Content Include="Views\Comments\Index.cshtml" />
     <Content Include="Views\Comments\Thanks.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ImagesBrad\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -322,6 +341,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811292019234_AddedCommentClass.resx">
       <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812041943219_AddProductsTable.resx">
+      <DependentUpon>201812041943219_AddProductsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812041949157_UpdateTable.resx">
+      <DependentUpon>201812041949157_UpdateTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812042002549_AddProduct.resx">
+      <DependentUpon>201812042002549_AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812042006163_AddProduct1.resx">
+      <DependentUpon>201812042006163_AddProduct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812042012322_product.resx">
+      <DependentUpon>201812042012322_product.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
