@@ -196,8 +196,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,10 +207,22 @@
     <Compile Include="Migrations\201811272008378_InitialCreate.Designer.cs">
       <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811291957418_AddedCustomerClass.cs" />
+    <Compile Include="Migrations\201811291957418_AddedCustomerClass.Designer.cs">
+      <DependentUpon>201811291957418_AddedCustomerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811292019234_AddedCommentClass.cs" />
+    <Compile Include="Migrations\201811292019234_AddedCommentClass.Designer.cs">
+      <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -271,9 +285,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Comments\Create.cshtml" />
+    <Content Include="Views\Comments\Delete.cshtml" />
+    <Content Include="Views\Comments\Details.cshtml" />
+    <Content Include="Views\Comments\Edit.cshtml" />
+    <Content Include="Views\Comments\Index.cshtml" />
+    <Content Include="Views\Comments\Thanks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -291,6 +312,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811272008378_InitialCreate.resx">
       <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811291957418_AddedCustomerClass.resx">
+      <DependentUpon>201811291957418_AddedCustomerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811292019234_AddedCommentClass.resx">
+      <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

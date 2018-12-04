@@ -20,6 +20,8 @@ namespace GroupProject.Models
     //test
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Comment> comments { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -29,5 +31,7 @@ namespace GroupProject.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<GroupProject.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
