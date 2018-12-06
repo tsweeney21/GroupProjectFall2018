@@ -199,41 +199,14 @@
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewProductsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811272008378_InitialCreate.cs" />
-    <Compile Include="Migrations\201811272008378_InitialCreate.Designer.cs">
-      <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811291957418_AddedCustomerClass.cs" />
-    <Compile Include="Migrations\201811291957418_AddedCustomerClass.Designer.cs">
-      <DependentUpon>201811291957418_AddedCustomerClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811292019234_AddedCommentClass.cs" />
-    <Compile Include="Migrations\201811292019234_AddedCommentClass.Designer.cs">
-      <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812041943219_AddProductsTable.cs" />
-    <Compile Include="Migrations\201812041943219_AddProductsTable.Designer.cs">
-      <DependentUpon>201812041943219_AddProductsTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812041949157_UpdateTable.cs" />
-    <Compile Include="Migrations\201812041949157_UpdateTable.Designer.cs">
-      <DependentUpon>201812041949157_UpdateTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812042002549_AddProduct.cs" />
-    <Compile Include="Migrations\201812042002549_AddProduct.Designer.cs">
-      <DependentUpon>201812042002549_AddProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812042006163_AddProduct1.cs" />
-    <Compile Include="Migrations\201812042006163_AddProduct1.Designer.cs">
-      <DependentUpon>201812042006163_AddProduct1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812042012322_product.cs" />
-    <Compile Include="Migrations\201812042012322_product.Designer.cs">
-      <DependentUpon>201812042012322_product.cs</DependentUpon>
+    <Compile Include="Migrations\201812061950198_initial.cs" />
+    <Compile Include="Migrations\201812061950198_initial.Designer.cs">
+      <DependentUpon>201812061950198_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -316,6 +289,11 @@
     <Content Include="Views\Comments\Index.cshtml" />
     <Content Include="Views\Comments\Thanks.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\NewProducts\Create.cshtml" />
+    <Content Include="Views\NewProducts\Delete.cshtml" />
+    <Content Include="Views\NewProducts\Details.cshtml" />
+    <Content Include="Views\NewProducts\Edit.cshtml" />
+    <Content Include="Views\NewProducts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,29 +313,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811272008378_InitialCreate.resx">
-      <DependentUpon>201811272008378_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811291957418_AddedCustomerClass.resx">
-      <DependentUpon>201811291957418_AddedCustomerClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811292019234_AddedCommentClass.resx">
-      <DependentUpon>201811292019234_AddedCommentClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812041943219_AddProductsTable.resx">
-      <DependentUpon>201812041943219_AddProductsTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812041949157_UpdateTable.resx">
-      <DependentUpon>201812041949157_UpdateTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812042002549_AddProduct.resx">
-      <DependentUpon>201812042002549_AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812042006163_AddProduct1.resx">
-      <DependentUpon>201812042006163_AddProduct1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812042012322_product.resx">
-      <DependentUpon>201812042012322_product.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812061950198_initial.resx">
+      <DependentUpon>201812061950198_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
