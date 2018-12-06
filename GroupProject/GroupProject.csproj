@@ -235,10 +235,6 @@
     <Compile Include="Migrations\201812042012322_product.Designer.cs">
       <DependentUpon>201812042012322_product.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812061935135_addNewProductClass.cs" />
-    <Compile Include="Migrations\201812061935135_addNewProductClass.Designer.cs">
-      <DependentUpon>201812061935135_addNewProductClass.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -362,9 +358,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812042012322_product.resx">
       <DependentUpon>201812042012322_product.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812061935135_addNewProductClass.resx">
-      <DependentUpon>201812061935135_addNewProductClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
