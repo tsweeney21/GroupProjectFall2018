@@ -1,0 +1,60 @@
+﻿
+@model IEnumerable<GroupProject.Models.NewProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.newProdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.newProdDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.newProdPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.newProdPicture)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            <img src="~/Images/Rocks.jpg" id="mainImage" alt="Sample Photo" />
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.newProdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.newProdDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.newProdPrice)
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.newProdPicture)*@
+            <img src=@Url.Content(item.newProdPicture) id="productpage" alt="Sample Photo" height="100" width="180" />
+
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.newID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.newID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.newID })
+        </td>
+    </tr>
+}
+
+</table>
