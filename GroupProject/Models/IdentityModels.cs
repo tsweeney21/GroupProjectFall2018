@@ -21,7 +21,7 @@ namespace GroupProject.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Comment> comments { get; set; }
-        public DbSet<Product> product { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
