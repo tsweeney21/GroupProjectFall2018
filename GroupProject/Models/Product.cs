@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GroupProject.Models
 {
-    [Table("Products")]
+    [Table("Product")]
     public class Product
     {
 
@@ -30,6 +30,7 @@ namespace GroupProject.Models
         [Required]
         [MaxLength(255)]
         public string ProdPicture { get; set; }
+        
 
     }
 }
