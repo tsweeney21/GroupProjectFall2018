@@ -3818,8 +3818,8 @@ fieldset[disabled] a.btn {
 }
 
 .btn-default {
-    color: green;
-    background-color: #fff;
+    color: #fff;
+    background-color: #5100a3;
     border-color: #ccc;
 }
 
@@ -3883,9 +3883,9 @@ fieldset[disabled] a.btn {
     }
 
 .btn-primary {
-    color: black;
-    background-color: gray;
-    border-color: green;
+    color: #fff;
+    background-color: #5100a3;
+    border-color: #ccc;
 }
 
     .btn-primary:focus,
