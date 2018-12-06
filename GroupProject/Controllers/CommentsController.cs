@@ -56,6 +56,7 @@ namespace GroupProject.Controllers
             }
 
             return View(comment);
+            
         }
 
         // GET: Comments/Edit/5

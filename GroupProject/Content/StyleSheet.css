@@ -5125,6 +5125,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+   
 }
 
 @media (min-width: 768px) {
@@ -5239,6 +5240,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
+    
 }
 
 .navbar-fixed-bottom {
@@ -5282,6 +5284,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+    
 }
 
     .navbar-toggle:focus {
