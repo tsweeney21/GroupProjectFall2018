@@ -12,6 +12,7 @@ using GroupProject.Models;
 
 namespace GroupProject.Controllers
 {
+    /*test*/
     [Authorize]
     public class AccountController : Controller
     {
