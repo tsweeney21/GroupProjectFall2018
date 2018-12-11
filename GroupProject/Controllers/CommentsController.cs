@@ -91,6 +91,7 @@ namespace GroupProject.Controllers
         }
 
         // GET: Comments/Delete/5
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -106,6 +107,7 @@ namespace GroupProject.Controllers
         }
 
         // POST: Comments/Delete/5
+        [Authorize(Roles = "admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
